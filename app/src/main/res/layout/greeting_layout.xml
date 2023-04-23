@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="364dp"
+        android:hint="Enter your name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="175dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="submitName"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_name"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="175dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="76dp"
+        android:onClick="submitName"
+        android:text="next"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Define the greeting layout using include tag -->
+    <include layout="@layout/greeting_layout"
+        android:id="@+id/greeting_layout" />
+
+    <!-- Define the tictactoe layout using include tag -->
+    <include layout="@layout/tic_tac_toe_layout"
+        android:id="@+id/tic_tac_toe_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>
